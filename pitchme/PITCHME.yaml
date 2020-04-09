@@ -46,7 +46,7 @@ layout : center
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "R Seminar - Videregående - Tue Hellstern"
+footnote : "R webinar - Tue Hellstern"
 
 #
 # Published Setting
@@ -58,8 +58,8 @@ published : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "R Seminar - Videregående"
-description : "R Seminar - Videregående, underviser Tue Hellstern"
+title : "R webinar"
+description : "R webinar, underviser Tue Hellstern"
 thumbnail : assets/img/logo.png
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
