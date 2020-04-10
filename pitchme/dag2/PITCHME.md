@@ -16,6 +16,25 @@ Tue Hellstern
 - Introduktion til Shiny
 @olend
 
+---
+@title[Intro Tidyverse]
+## Intro Tidyverse
+![tidyverse](tidyverse.jpg)
+---
+@title[Import - readr]
+## Import - readr
+
+---
+@title[Klargøring af data med – tidyr]
+## Import - tidy
+
+---
+@title[Data ”manipulation” med – dplyr]
+## Data - dplyr
+
+---
+@title[Plot af data med – ggplot2]
+## Plot - ggplo2
 
 ---
 @title[Shiny]
