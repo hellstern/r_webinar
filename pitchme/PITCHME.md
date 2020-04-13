@@ -1,8 +1,8 @@
+@title[Start]
 # R **webinar**
-
 Tue Hellstern
 
----
++++
 @title[Tue Hellstern]
 ## Tue Hellstern
 <br>
@@ -16,7 +16,7 @@ Tue Hellstern
 - Lektor CPH-business
 @olend
 
----
++++
 @title[Agenda]
 @snap[north span-50]
 ## Agenda
@@ -89,7 +89,7 @@ Første version frigivet i 1995, en stabil betaversion i 2000
 
 +++
 @title[Agenda]
-## Agenda - Dag 1
+### Agenda - Dag 1
 
 @ol[...](false)
 - Intro R & RStudio
@@ -103,7 +103,7 @@ Første version frigivet i 1995, en stabil betaversion i 2000
 
 +++
 @title[RStudio]
-## RStudio
+### RStudio
 
 +++
 @title[RStudio - IDE]
@@ -130,15 +130,16 @@ www.rstudio.cloud
 
 +++
 @title[IDE - Brugerflade]
-
+### IDE - Brugerflade
 ![](assets/img/rstudio_editor.png)
 
 +++
 @title[Dataimport]
-## Dataimport
+### Dataimport
 
 +++
 @title[Typer]
+### Import typer
 
 @ol[...](false)
 - CSV
@@ -152,6 +153,7 @@ www.rstudio.cloud
 
 +++
 @title[readxl]
+### readxl
 
 @snap[north-west span-50 text-black]
 **readxl** pakken er en del af tidyverse pakken  
@@ -180,7 +182,7 @@ read_excel("SeminarData.xlsx", sheet="height_weight")
 @title[Parameter]
 
 @snap[north-west span-100 text-black]
-readxl parameter
+### readxl parameter
 @snapend
 
 @snap[west span-100 text-black]
@@ -210,6 +212,7 @@ read_excel(
 
 +++ ?code=code/API_StatistikbankenPitch.R&lang=r zoom-12
 @title[API]
+### API
 
 @snap[north-west span-100 text-05 text-black]
 **API** står for Application Programming Interface, det er for betegner en ”funktion” inden for software, der gør det muligt for flere programmer at arbejder sammen.
@@ -224,6 +227,7 @@ read_excel(
 
 +++
 @title[Clipboard]
+### Clipboard
 
 @snap[north-west span-100 text-05 text-black]
 Det er muligt at bruge **CRTL+C** og så hente fra **Clipboard**
@@ -237,7 +241,7 @@ read.table(file="clipboard", sep ="t", header=TRUE)
 
 +++
 @title[Funktioner]
-## Funktioner
+### Funktioner
 indbyggede - user defined
 
 @snap[north-west span-70 text-black text-07]
@@ -256,14 +260,14 @@ indbyggede - user defined
 ---
 @title[Opgave]
 @snap[north-west span-70 text-black text-07]
-## Opgaver
+## Opgave
 @snapend
 Her er en lille opgave som du kan løse til næste gang. 
 
 +++?color=white
 @title[Funktion – SUM to tal]
 @snap[north-west span-70 text-black text-07]
-
+sd
 @snapend
 
 @snap[west span-50]
@@ -271,6 +275,19 @@ Her er en lille opgave som du kan løse til næste gang.
 @snapend
 
 
+---
+@title[Dag 2]
+## Dag 2
 
++++
+@title[Agenda - Dag 2]
+### Dag 2 - Agenda
+
+- Intro Tidyverse
+- Import - readr
+- Klargøring af data med – tidyr
+- Data ”manipulation” med – dplyr
+- Plot af data med – ggplot2
+- Introduktion til Shiny
 
 
