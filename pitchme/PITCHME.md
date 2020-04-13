@@ -52,8 +52,6 @@ Tue Hellstern
 @olend
 @snapend
 
-<<<<<<< HEAD
-=======
 ---
 @title[Hvorfor R]
 @snap[north span-50 text-07]
@@ -83,6 +81,10 @@ Første version frigivet i 1995, en stabil betaversion i 2000
 
 ---
 @title[Workflow R]
->>>>>>> ca767d244a1f8b8b8bc421ee696eaa4622d13e32
+
+
+---
+@titel(Opgave)
+
 
 
