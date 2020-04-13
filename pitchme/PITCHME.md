@@ -11,7 +11,7 @@ Tue Hellstern
 - Konsulent opgaver siden 1995
 - Virksomheder
 - Kursusvirksomheder
-- Uddandet på ITU
+- Uddannet på ITU
 - Lektor DTU
 - Lektor CPH-business
 @olend
@@ -27,7 +27,7 @@ Tue Hellstern
 ### Dag 1
 @ol[...](false)
 - Intro R & RStudio
-- R syntax - Intro
+- R syntaks - Intro
 - R Pakker
 - R Datatyper
 - Krav til data
@@ -40,8 +40,6 @@ Tue Hellstern
 -- Opgave --
 @snapend
 
-
-
 @snap[east span-50 text-07]
 ### Dag 2
 @ol[...](false)
@@ -53,3 +51,15 @@ Tue Hellstern
 - Introduktion til Shiny
 @olend
 @snapend
+
+---
+@title[Opgave]
+
+## Opgave
+@ol[... text-07](false)
+- Indlæs pakke - readxl
+- "Brug" pakken i dit R script
+- Indlæs Excel filen "Biler.xlsx" i **Biler**  -  *read_excel("Biler.xlsx")*
+- 
+@olend
+
