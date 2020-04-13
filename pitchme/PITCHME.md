@@ -52,14 +52,5 @@ Tue Hellstern
 @olend
 @snapend
 
----
-@title[Opgave]
 
-## Opgave
-@ol[... text-07](false)
-- Indlæs pakke - readxl
-- "Brug" pakken i dit R script
-- Indlæs Excel filen "Biler.xlsx" i **Biler**  -  *read_excel("Biler.xlsx")*
-- 
-@olend
 
