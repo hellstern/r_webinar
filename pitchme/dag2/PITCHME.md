@@ -19,7 +19,7 @@ Tue Hellstern
 ---
 @title[Intro Tidyverse]
 ## Intro Tidyverse
-![tidyverse](tidyverse.jpg)
+![](img/tidyverse.jpg)
 ---
 @title[Import - readr]
 ## Import - readr

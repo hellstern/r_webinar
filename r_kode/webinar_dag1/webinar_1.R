@@ -4,6 +4,20 @@
 # Tue Hellstern
 # *************************** 
 
+# ***************************
+# Genveje
+# *************************** 
+
+# Windows
+# CTRL + Enter - Kør en R kommando
+# Genvej for at indsætte "<-" - ALT + - 
+# Genvej for at indsætte "%>%" - CTRL + SHIFT + M
+
+# MAC
+# CMD + Enter - Kør en R kommando
+# Genvej for at indsætte "<-" - Option + - 
+# Genvej for at indsætte "%>%" - CMD + SHIFT + M
+
 
 # ***************************
 # Grundlæggende syntaks
@@ -56,35 +70,6 @@ x <= 2        # "<=" betyder "mindre eller lig med
 
 
 # ***************************
-# Working Directory
-# *************************** 
-getwd()
-setwd("C:/Users/Tue Hellstern/Documents/GitHub/r_webinar/r_kode/webinar_dag1")
-# setwd("C:/Users/Tue Hellstern/Documents/GitHub")
-
-
-# ***************************
-# Pakker
-# *************************** 
-## WWW sider
-browseURL("https://cran.r-project.org")
-
-library()  # Pakker der er på din computer
-install.packages("dplyr")     # install
-library(dplyr)                # load
-
-update.packages("tidyverse")  # Update
-remove.packages("tidyverse")  # Fjern
-
-
-# ***************************
-# Indlæsning af Data
-# *************************** 
-
-
-
-
-# ***************************
 # Hjælp
 # *************************** 
 help("mean") # Hjælp til en specifik funktion - mean
@@ -97,7 +82,61 @@ help("plot")
 help(package = "base")
 help(package = "tidyverse")
 
-install.packages("ggplot2")   # Installation af pakken "ggplot2"
+
+
+# ***************************
+# Working Directory
+# *************************** 
+getwd()
+setwd("C:/Users/Tue Hellstern/Documents/GitHub/r_webinar/r_kode/webinar_dag1")
+# setwd("C:/Users/Tue Hellstern/Documents/GitHub")
+
+
+
+# ***************************
+# Pakker
+# *************************** 
+## WWW sider
+browseURL("https://cran.r-project.org")
+
+library()                     # Pakker der er på din computer
+install.packages("ggplot2")     # install
+library(dplyr)                # load
+
+update.packages("tidyverse")  # Update
+remove.packages("tidyverse")  # Fjern
+
+browseURL("https://www.tidyverse.org")
+
+
+
+# ***************************
+# Indlæsning af Data
+# *************************** 
+
+## CSV filer 
+? read.csv
+
+# sn.csv <- read.csv("C:\Users\tuhe\Desktop\social_network.csv", header = TRUE, sep = ";")      # Virker IKKE 
+sn.csv <- read.csv("C:\\Users\\tuhe\\Desktop\\social_network.csv", header = TRUE, sep = ";")  # Virker
+sn.csv <- read.csv("C:/Users/tuhe/Desktop/social_network.csv", header = TRUE, sep = ";")      # Virker
+
+sn.csv <- read.csv("social_network.csv", header = TRUE, sep = ";")                            # Virker, hvis CSV er i WD
+str(sn.csv)
+
+## Gem som CSV
+write_csv(sn.csv, file = "social_network_2.csv")
+? write.csv
+
+write.table(sn.csv, file = "social_network_2.csv", sep = ";")
+? write.table
+
+
+## Excel filer
+sn.excel <- read_excel("college.xlsx")
+str(sn.excel)
+? read_excel
+
 
 
 # ***************************
@@ -115,6 +154,69 @@ plot(x = disp_data, y = mpg_data)
 
 plot(mtcars[, 1:4])
 
+# Plot - sociale_network.csv
+sn.csv <- read.csv("social_network.csv", header = TRUE, sep = ";")
+str(sn.csv)
+
+site.freq <- table(sn.csv$Site)  # Opret tabel ud fra Site
+str(site.freq)
+barplot(site.freq)
+
+barplot(site.freq[order(site.freq, decreasing = T)])      # Sortering efter order
+barplot(site.freq[order(site.freq)], horiz = T)           # Horizontally
+
+# Facebook - Blå
+FacebookColor <- c(rep("red", 5), rgb(59, 89, 152, maxColorValue = 255))  # Farve "skama"
+barplot(site.freq[order(site.freq)], horiz = TRUE, col = FacebookColor)
+
+# Viridis farve skema
+browseURL("https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html")
+install.packages("viridis")  # Install
+library("viridis")           # Load
+
+
+# Barplot med Viridis farve skema
+barplot(site.freq[order(site.freq)], horiz = TRUE, col=viridis(7))
+
+barplot(site.freq[order(site.freq)],
+        horiz = TRUE,                                                       # Horizontal
+        col = viridis(7),                                                   # Farver
+        border = NA,                                                        # Ingen kanter
+        xlim = c(0, 100),  # Scale 0-100
+        main = "Preferred Social Networking Site\nA Survey of 202 Users",
+        xlab = "Number of Users")
+
+# HISTOGRAMS
+hist(sn.csv$Age) # Ny Data Frame
+
+hist(sn.csv$Age,
+     col = viridis(7),
+     main = "Ages of Respondents\nSocial Networking Survey of 202 Users",
+     xlab = "Age of Respondents",
+     ylim = c(0, 70))  # Scale 0-70)
+
+#BOX PLOTS
+boxplot(sn.csv$Age)
+
+boxplot(sn.csv$Age,
+        col = "beige",
+        notch = T,
+        horizontal = T,
+        main = "Ages of Respondents\nSocial Networking Survey of 202 Users",
+        xlab = "Age of Respondents")
+
+# Sammelig 2 stk Boxplots Female/Male
+box_male <- subset(sn.csv, Gender=="male")
+box_female <- subset(sn.csv, Gender=="female")
+
+boxplot(box_female$Age, box_male$Age,
+        main = "Femal vs Male",
+        names = c("Female", "Male"),
+        col = viridis(2),
+        horizontal = TRUE,
+        notch = TRUE,
+        xlab = "Age of Respondents")
+
 
 # ***************************
 # Links
@@ -125,3 +227,7 @@ browseURL("https://www.rdocumentation.org")
 browseURL("https://rweekly.org")
 browseURL("https://ropensci.org/packages")
 browseURL("https://www.r-graph-gallery.com/index.html")
+browseURL("https://www.tidyverse.org")
+browseURL("http://www.sthda.com/english/wiki/colors-in-r")
+browseURL("http://www.r-graph-gallery.com/42-colors-names/")
+browseURL("https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html")

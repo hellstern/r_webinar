@@ -27,13 +27,13 @@ highlight : tomorrow
 # Theme-Override Setting
 # Doc: https://gitpitch.com/docs/settings/custom-theme
 #
-theme-override: assets/css/PITCHME.css
+theme-override: ./assets/css/PITCHME.css
 
 #
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/logo.png
+logo : ./assets/img/logo.png
 logo-position : top-left
 
 #
@@ -58,9 +58,9 @@ published : true
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "R webinar"
+title : "R webinar - Introduktion"
 description : "R webinar, underviser Tue Hellstern"
-thumbnail : assets/img/logo.png
+thumbnail : ./assets/img/logo.png
 
 
 code-line-numbers : true
@@ -76,7 +76,7 @@ theme-code       : [ "Source Code Pro", "100", "120" ]
 highlight        : tomorrow
 theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
-logo             : assets/img/logo.png
+logo             : ./assets/img/logo.png
 logo-position    : top-left
 layout           : center
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
