@@ -60,24 +60,32 @@ Tue Hellstern
 
 @snap[west span-50 text-06]
 * R er et programmeringssprog **fokuseret** på statistisk og grafisk analyse
-* Det bruges i **statistisk**, **dataanalyse** og **Machine Learning**
+* Det bruges i **Dtatistisk**, **Dataanalyse** og **Machine Learning**
 * R er i øjeblikket det **næst mest** efterspurgte programmeringssprog på Data Science jobmarkedet, kun overgået af Python
 @snapend
 
-@snap[east span-40 text-02]
+@snap[east span-50 text-02]
 ![](assets/img/graf_r.png)
-Kilde: (https://www.quora.com/Which-languages-are-important-for-Data-Scientists-in-2019)[https://www.quora.com/Which-languages-are-important-for-Data-Scientists-in-2019]
+Kilde: [https://www.quora.com/Which-languages-are-important-for-Data-Scientists-in-2019](https://www.quora.com/Which-languages-are-important-for-Data-Scientists-in-2019)
 @snapend
 
-+++?image=(assets/img/why_r.jpeg)
++++
 @title[Hvorfor R]
+## Hvorfor R
+![](assets/img/why_r.jpeg)
 
 +++
 @title[Historien om R]
+## Historien om R
 
-R er udviklet på Bell Laboratories af John Chambers og hans kolleger
-
-Første version frigivet i 1995, en stabil betaversion i 2000
+@ol[... text-08](false)
+- R blev udviklet som en implementation af S-programmeringssprog af John Chambers i 1976, på Bell Labs
+- R blev viderudviklet af Ross Ihaka og Robert Gentleman ved University of Auckland, New Zealand
+- Udviklingen varetages af R Development Core Team
+- Projektet blev udtænkt i 1992
+- Første version frigivet i 1995
+- Stabil betaversion (v1.0) den 29. februar 2000
+@olend
 
 +++
 @title[Workflow R]
