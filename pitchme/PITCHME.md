@@ -89,7 +89,8 @@ Kilde: [https://www.quora.com/Which-languages-are-important-for-Data-Scientists-
 
 +++
 @title[Workflow R]
-
+## Workflow
+![](assets/img/diagram.png)
 
 ---
 @title[Opgave]
@@ -97,7 +98,7 @@ Kilde: [https://www.quora.com/Which-languages-are-important-for-Data-Scientists-
 
 +++
 @title[Agenda]
-### Agenda - Dag 1
+## Agenda - Dag 1
 
 @ol[...](false)
 - Intro R & RStudio
@@ -111,10 +112,13 @@ Kilde: [https://www.quora.com/Which-languages-are-important-for-Data-Scientists-
 
 +++
 @title[RStudio]
-### RStudio
+## RStudio
 
 +++
 @title[RStudio - IDE]
+@snap[north text-07]
+## RStudio - IDE
+@snapend
 
 @snap[west span-50]
 @box[bg-gold text-white rounded box-padding](RStudio er et IDE, Integreret Udviklingsmiljø der gør det nemmere at skrive din R kode)
@@ -138,16 +142,22 @@ www.rstudio.cloud
 
 +++
 @title[IDE - Brugerflade]
-### IDE - Brugerflade
+@snap[north text-07 span-100]
+## IDE - Brugerflade
+@snapend
+
+@snap[south span-80]
 ![](assets/img/rstudio_editor.png)
+@snapend
+
 
 +++
 @title[Dataimport]
-### Dataimport
+## Dataimport
 
 +++
 @title[Typer]
-### Import typer
+## Import typer
 
 @ol[...](false)
 - CSV
@@ -161,7 +171,7 @@ www.rstudio.cloud
 
 +++
 @title[readxl]
-### readxl
+## readxl
 
 @snap[north-west span-50 text-black]
 **readxl** pakken er en del af tidyverse pakken  
@@ -190,7 +200,7 @@ read_excel("SeminarData.xlsx", sheet="height_weight")
 @title[Parameter]
 
 @snap[north-west span-100 text-black]
-### readxl parameter
+## readxl parameter
 @snapend
 
 @snap[west span-100 text-black]
@@ -220,7 +230,7 @@ read_excel(
 
 +++ ?code=code/API_StatistikbankenPitch.R&lang=r zoom-12
 @title[API]
-### API
+## API
 
 @snap[north-west span-100 text-05 text-black]
 **API** står for Application Programming Interface, det er for betegner en ”funktion” inden for software, der gør det muligt for flere programmer at arbejder sammen.
@@ -235,7 +245,7 @@ read_excel(
 
 +++
 @title[Clipboard]
-### Clipboard
+## Clipboard
 
 @snap[north-west span-100 text-05 text-black]
 Det er muligt at bruge **CRTL+C** og så hente fra **Clipboard**
@@ -249,11 +259,11 @@ read.table(file="clipboard", sep ="t", header=TRUE)
 
 +++
 @title[Funktioner]
-### Funktioner
+## Funktioner
 indbyggede - user defined
 
 @snap[north-west span-70 text-black text-07]
-### R har rigtig mange indbyggede funktioner, f.eks.
+## R har rigtig mange indbyggede funktioner, f.eks.
 @snapend
 
 @ol[text-blue](false)
@@ -289,7 +299,7 @@ sd
 
 +++
 @title[Agenda - Dag 2]
-### Dag 2 - Agenda
+## Dag 2 - Agenda
 
 - Intro Tidyverse
 - Import - readr
