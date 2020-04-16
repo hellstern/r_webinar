@@ -12,6 +12,7 @@
 # CTRL + Enter - Kør en R kommando
 # Genvej for at indsætte "<-" - ALT + - 
 # Genvej for at indsætte "%>%" - CTRL + SHIFT + M
+# TAB - Mulige kommandoer
 
 # MAC
 # CMD + Enter - Kør en R kommando
@@ -100,7 +101,7 @@ setwd("C:/Users/Tue Hellstern/Documents/GitHub/r_webinar/r_kode/webinar_dag1")
 browseURL("https://cran.r-project.org")
 
 library()                     # Pakker der er på din computer
-install.packages("ggplot2")     # install
+install.packages("ggplot2")   # install
 library(dplyr)                # load
 
 update.packages("tidyverse")  # Update
