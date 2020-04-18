@@ -139,7 +139,8 @@ www.rstudio.cloud
 +++
 @title[IDE - Brugerflade]
 ### IDE - Brugerflade
-![](assets/img/rstudio_editor.png)
+
+<img src="assets/img/rstudio_editor.png" alt="rstudio" width="700"/>
 
 +++
 @title[Dataimport]
