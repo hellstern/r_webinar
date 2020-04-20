@@ -13,6 +13,7 @@
 # Genvej for at indsætte "<-" - ALT + - 
 # Genvej for at indsætte "%>%" - CTRL + SHIFT + M
 # TAB - Mulige kommandoer
+# CTRL + PIL OP - Afslutter din kommando
 
 # MAC
 # CMD + Enter - Kør en R kommando

@@ -142,6 +142,7 @@ www.rstudio.cloud
 
 +++
 @title[IDE - Brugerflade]
+<<<<<<< HEAD
 @snap[north text-07 span-100]
 ## IDE - Brugerflade
 @snapend
@@ -150,6 +151,11 @@ www.rstudio.cloud
 ![](assets/img/rstudio_editor.png)
 @snapend
 
+=======
+### IDE - Brugerflade
+
+<img src="assets/img/rstudio_editor.png" alt="rstudio" width="700"/>
+>>>>>>> f32942aa6c784c71fb7d303dc57fa68f16a6a464
 
 +++
 @title[Dataimport]

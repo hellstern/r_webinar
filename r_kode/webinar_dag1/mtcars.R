@@ -7,8 +7,8 @@ data()
 data(mtcars)
 
 colnames(mtcars)           # Viser "overskrifter"
-head(mtcars) # 6 rækker som default
-head(mtcars, n=10) # 10 rækker
+head(mtcars)               # 6 rækker som default
+head(mtcars, n=10)        # 10 rækker
 tail(mtcars, n=10)
 str(mtcars)
 colnames(mtcars)
